@@ -1,0 +1,31 @@
+groups:
+    default:
+        inherits: ''
+        global:
+            meta:
+                color: '7'
+            permissions:
+            - command.vanilla.help
+            - command.vanilla.msg
+            - command.vanilla.me
+            - command.vanilla.kill
+            - command.vanilla.list
+            - ability.player.useblock
+            - ability.player.useitem
+            - ability.player.blockplace
+            - ability.player.blockbreak
+            - ability.player.attack
+            - ability.player.chat
+            - command.fastwarp.spawn
+        worlds: {}
+    admin:
+        inherits: ''
+        global:
+            meta:
+                color: c
+                tablistcolor: c
+                prefix: '&4[admin] '
+            permissions:
+            - '*'
+            - ^ability.admin.hidejoinmessage
+        worlds: {}

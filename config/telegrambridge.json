@@ -1,0 +1,39 @@
+{
+  "general":{
+    "chat_ids":[
+      "-1"
+    ],
+    "proxy":{
+      "proxy":"DIRECT",
+      "port":0,
+      "addr":""
+    },
+    "relay_level":{
+      "user_kill_by_user":true,
+      "user_join":true,
+      "server_stop":true,
+      "user_leave":true,
+      "server_start":true,
+      "user_kill_by_other":true
+    },
+    "relay_mode":"TWO_SIDE",
+    "verbose_logging":false,
+    "text":{
+      "status_cmd":"Now on the server: *${time}* (${timesofday})",
+      "player_leave":"\\[ *${nickname}* has disconnected ]",
+      "player_empty":"No one is online. Maybe it's time to fix it? :)",
+      "server_stop":"\\[ Server has stopped ]",
+      "death_message":"\\[ ${deathmessage} ]",
+      "player_join":"\\[ *${nickname}* has connected ]",
+      "chatmessage_to_telegram":"*${nickname}:* ${message}",
+      "server_start":"\\[ Server has started ]",
+      "notfoundchat":"Chat `${chatid}` is not found in allowed chats. You can add it in `config/telegrambridge.cfg`",
+      "player_list":"*Players online*:${endline}${endline}${playerlist}${endline}Total: *${playercount}*",
+      "chatmessage_to_minecraft":"§3TelegramBridge§f / <§b${nickname}§f> ${message}"
+    },
+    "telegram_config":{
+      "api_token":"",
+      "telegram_long_pooling_timeout":100
+    }
+  }
+}
