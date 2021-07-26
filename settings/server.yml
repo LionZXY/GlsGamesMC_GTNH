@@ -61,7 +61,7 @@ tools:
         enabled: true
         interval: 120
         maxBackups: 50
-        maxDirSize: 50000
+        maxDirSize: 100000
         worlds: null
         notifyPlayers: true
     warpProtection: []
