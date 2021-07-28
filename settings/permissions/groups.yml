@@ -16,6 +16,7 @@ groups:
             - ability.player.blockbreak
             - ability.player.attack
             - ability.player.chat
+            - command.forge.tps
         worlds: {}
     admin:
         inherits: ''
