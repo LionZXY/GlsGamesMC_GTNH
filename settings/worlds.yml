@@ -3,7 +3,7 @@ global: &global
     generation: &global_gen
         providerID: 0
         levelType: rwg
-        seed: 9155385782274943384
+        seed: SECRET_WORLD_SEED
         generateStructures: true
         generatorSettings: ''
         disableModGeneration: false

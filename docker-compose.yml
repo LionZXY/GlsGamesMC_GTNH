@@ -6,6 +6,7 @@ services:
       - "25567:25565"
     environment:
       MC_RAM: "32G"
+      SECRET_WORLD_SEED: HIGHSECRET
     volumes:
       - ./world:/app/World
       - ./logs:/app/logs
