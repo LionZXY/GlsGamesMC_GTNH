@@ -1,1 +1,7 @@
-users: {}
+users:
+    lionzxy:
+        inherits: admin
+        global:
+            meta: {}
+            permissions: []
+        worlds: {}
