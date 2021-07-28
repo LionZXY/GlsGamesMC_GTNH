@@ -6,9 +6,9 @@ listen:
         enabled: false
         port: 25565
     rcon:
-        enabled: false
-        port: 25565
-        password: ''
+        enabled: true
+        port: 25575
+        password: 'DEFAULT'
         whitelist: null
 settings:
     authorization:

@@ -2,7 +2,8 @@ FROM lionzxy/multiarch_java
 
 WORKDIR /app/
 
-RUN apk add sed
+ENV RCON_PORT=25575 RCON_PASSWORD=DEFAULT
+COPY --from=itzg/rcon-cli:latest /rcon-cli /bin/
 
 COPY . /app/
 RUN chmod +x /app/startserver.sh
