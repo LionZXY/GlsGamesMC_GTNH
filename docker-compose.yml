@@ -1,14 +1,16 @@
 services:
   mc_gtnh:
-    image: glitchless/gli_mc_gtnh:8
+    image: glitchless/gli_mc_gtnh:18
     restart: unless-stopped
     ports:
       - "25567:25565"
     environment:
-      MC_RAM: "16G"
+      MC_RAM: "32G"
     volumes:
-      - ./world:/app/world
+      - ./world:/app/World
       - ./logs:/app/logs
       - ./backups:/app/backups
-      - ./config/telegrambridge.cfg:/app/config/telegrambridge.cfg
+      - ./config/telegrambridge.json:/app/config/telegrambridge.json
       - ./config/glitchlessauth.cfg:/app/config/glitchlessauth.cfg
+      - ./storage:/app/storage
+      - ./config/JourneyMapServer:/app/config/JourneyMapServer
