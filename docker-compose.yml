@@ -8,7 +8,7 @@ services:
       MC_RAM: "32G"
       SECRET_WORLD_SEED: HIGHSECRET
     volumes:
-      - ./world:/app/World
+      - ./worlds:/app/worlds
       - ./logs:/app/logs
       - ./backups:/app/backups
       - ./config/telegrambridge.json:/app/config/telegrambridge.json
