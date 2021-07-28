@@ -16,7 +16,6 @@ groups:
             - ability.player.blockbreak
             - ability.player.attack
             - ability.player.chat
-            - command.fastwarp.spawn
         worlds: {}
     admin:
         inherits: ''
