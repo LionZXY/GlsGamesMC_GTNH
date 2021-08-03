@@ -28,4 +28,5 @@ groups:
             permissions:
             - '*'
             - ^ability.admin.hidejoinmessage
+            - ^ability.admin.keepinventory
         worlds: {}
