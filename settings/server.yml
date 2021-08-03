@@ -46,8 +46,8 @@ settings:
         database: global
         tablePrefix: mc_
     security:
-        allowFlight: false
-        checkBreakSpeed: true
+        allowFlight: true
+        checkBreakSpeed: false
 tools:
     autobroadcast:
         enabled: false
