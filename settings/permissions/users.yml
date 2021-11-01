@@ -5,3 +5,35 @@ users:
             meta: {}
             permissions: []
         worlds: {}
+    burivuh26:
+        inherits: default
+        global:
+            meta:
+                color: a
+                tablistcolor: a
+            permissions: []
+        worlds: {}
+     sarafa2n:
+        inherits: default
+        global:
+            meta:
+                color: b
+                tablistcolor: b
+            permissions: []
+        worlds: {}
+     drevnii:
+        inherits: default
+        global:
+            meta:
+                color: e
+                tablistcolor: e
+            permissions: []
+        worlds: {}
+     SerjioSA:
+        inherits: default
+        global:
+            meta:
+                color: 2
+                tablistcolor: 2
+            permissions: []
+        worlds: {}
