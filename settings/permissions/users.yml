@@ -13,15 +13,15 @@ users:
                 tablistcolor: a
             permissions: []
         worlds: {}
-     sarafa2n:
+    sarafa2n:
         inherits: default
         global:
             meta:
-                color: b
                 tablistcolor: b
+                color: b
             permissions: []
         worlds: {}
-     drevnii:
+    drevnii:
         inherits: default
         global:
             meta:
@@ -29,11 +29,11 @@ users:
                 tablistcolor: e
             permissions: []
         worlds: {}
-     SerjioSA:
+    serjiosa:
         inherits: default
         global:
             meta:
-                color: 2
-                tablistcolor: 2
+                tablistcolor: '2'
+                color: '2'
             permissions: []
         worlds: {}
