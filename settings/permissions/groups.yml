@@ -17,6 +17,8 @@ groups:
             - ability.player.attack
             - ability.player.chat
             - command.forge.tps
+            - command.basic.home
+            - command.basic.sethome
         worlds: {}
     admin:
         inherits: ''
