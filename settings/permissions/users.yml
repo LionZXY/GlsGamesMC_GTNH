@@ -37,3 +37,11 @@ users:
                 color: '2'
             permissions: []
         worlds: {}
+    rougsig:
+        inherits: default
+        global:
+            meta:
+                tablistcolor: 'd'
+                color: 'd'
+            permissions: []
+        worlds: {}
