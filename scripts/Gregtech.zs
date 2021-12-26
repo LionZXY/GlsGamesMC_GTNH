@@ -12,7 +12,6 @@ import mods.gregtech.ArcFurnace;
 import mods.gregtech.Assembler;
 import mods.gregtech.Autoclave;
 import mods.gregtech.BlastFurnace;
-import mods.gregtech.Centrifuge;
 import mods.gregtech.ChemicalReactor;
 import mods.gregtech.Extruder;
 import mods.gregtech.FluidExtractor;
@@ -384,11 +383,6 @@ recipes.removeShapeless(<gregtech:gt.metaitem.01:2536> * 9, [<gregtech:gt.blockg
 // --- Teleporter
 recipes.remove(<gregtech:gt.blockmachines:1145>);
 
-// --- Niobtitaninum Dust handcraft
-recipes.removeShapeless(<gregtech:gt.metaitem.01:1360>);
-
-// --- Tungstencarbide Dust handcraft
-recipes.removeShapeless(<gregtech:gt.metaitem.01:1370>);
 
 
 
@@ -807,13 +801,6 @@ Assembler.addRecipe(<gregtech:gt.neutronreflector>, <dreamcraft:item.NeutronRefl
 // --- RTG Pellets
 Assembler.addRecipe(<IC2:itemRTGPellet>, <gregtech:gt.metaitem.01:22032> * 6, <IC2:itemPlutonium> * 3, <liquid:ic2coolant> * 1000, 1200, 120);
 
-// --- Shutter Module
-Assembler.addRecipe(shutterModule * 2, plateIron * 2, <minecraft:iron_door> * 1, 1000, 16);
-// -
-Assembler.addRecipe(shutterModule * 2, plateAluminium * 2, <minecraft:iron_door> * 1, 1000, 16);
-// -
-Assembler.addRecipe(shutterModule * 2, plateWroughtIron * 2, <minecraft:iron_door> * 1, 1000, 16);
-
 
 
 // --- Alloy Smelter Recipes ---
@@ -884,31 +871,6 @@ Autoclave.addRecipe(<Thaumcraft:ItemShard:5>, <gregtech:gt.metaitem.01:2544>, <l
 Autoclave.addRecipe(<Thaumcraft:ItemShard:5>, <gregtech:gt.metaitem.01:2544>, <liquid:ic2distilledwater> * 100, 9000, 1500, 30);
 // -
 Autoclave.addRecipe(<Thaumcraft:ItemShard:5>, <gregtech:gt.metaitem.01:2544>, <liquid:molten.void> * 36, 10000, 1000, 30);
-
-
-
-// --- Blast Furnace Recipes ---
-
-
-// --- Graphene
-BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:2819>], [<gregtech:gt.metaitem.01:2020>, <gregtech:gt.metaitem.01:2865>], 500, 480, 2000);
-// -
-BlastFurnace.addRecipe([<gregtech:gt.metaitem.01:2819>], [<gregtech:gt.metaitem.01:11020>, <gregtech:gt.metaitem.01:2865>], 500, 480, 2000);
-
-
-
-// --- Canner Recipes ---
-
-
-
-// --- Centrifuge Recipes ---
-
-
-
-
-// --- Re-add Cadmium Centrifuge recipe
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:1067>, <gregtech:gt.metaitem.01:1045>, <gregtech:gt.metaitem.01:1064>, <gregtech:gt.metaitem.01:1065>, <gregtech:gt.metaitem.01:1055>, <gregtech:gt.metaitem.01:1062>], null, <gregtech:gt.metaitem.01:2891>, null, null, [2500, 2500, 2500, 2500, 2500, 2500], 64, 20);
-        
 
 
 
@@ -1768,3 +1730,7 @@ for GT_Dye, oreDye in {
 } as IIngredient[IItemStack] {
   recipes.addShapeless(GT_Dye, [oreDye]);
 }
+
+// --- blueprint conversion
+recipes.addShapeless(<structurelib:item.structurelib.constructableTrigger>, [<ore:dyeBlue>, <ore:platePaper>, <ore:dyeBlue>, <ore:dyeWhite>,]);
+recipes.addShapeless(<tectech:item.em.constructable>, [<structurelib:item.structurelib.constructableTrigger>]);

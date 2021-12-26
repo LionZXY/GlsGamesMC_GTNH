@@ -598,16 +598,16 @@ mods.avaritia.ExtremeCrafting.addShaped(<DraconicEvolution:energyInfuser>, [
 [null, null, null, null, null, null, null, null, null],
 [null, null, null, null, null, null, null, null, null]]);
 
-// --- Particel Generator 
+// --- Particle Generator 
 mods.avaritia.ExtremeCrafting.addShaped(<DraconicEvolution:particleGenerator>, [
 [null, null, null, null, null, null, null, null, null],
-[null, null, null, <DraconicEvolution:infusedObsidian>, <ore:stickBlaze>, <ore:itemVibrantCrystal>, <ore:stickBlaze>, <DraconicEvolution:infusedObsidian>, null],
+[null, null, null, <minecraft:obsidian>, <ore:stickBlaze>, <ore:itemVibrantCrystal>, <ore:stickBlaze>, <minecraft:obsidian>, null],
 [null, null, null, <ore:stickBlaze>, null, null, null, <ore:stickBlaze>, null],
-[null, <DraconicEvolution:infusedObsidian>, <ore:stickBlaze>, <ore:itemVibrantCrystal>, <ore:stickBlaze>, <DraconicEvolution:infusedObsidian>, null, <ore:itemVibrantCrystal>, null],
-[null, <ore:stickBlaze>, null, <ore:stickBlaze>, DraconicCore, <ore:stickBlaze>, null, <ore:stickBlaze>, null],
-[null, <ore:itemVibrantCrystal>, null, <DraconicEvolution:infusedObsidian>, <ore:stickBlaze>, <ore:itemVibrantCrystal>, <ore:stickBlaze>, <DraconicEvolution:infusedObsidian>, null],
+[null, <minecraft:obsidian>, <ore:stickBlaze>, <ore:itemVibrantCrystal>, <ore:stickBlaze>, <minecraft:obsidian>, null, <ore:itemVibrantCrystal>, null],
+[null, <ore:stickBlaze>, null, <ore:stickBlaze>, <minecraft:comparator>, <ore:stickBlaze>, null, <ore:stickBlaze>, null],
+[null, <ore:itemVibrantCrystal>, null, <minecraft:obsidian>, <ore:stickBlaze>, <ore:itemVibrantCrystal>, <ore:stickBlaze>, <minecraft:obsidian>, null],
 [null, <ore:stickBlaze>, null, null, null, <ore:stickBlaze>, null, null, null],
-[null, <DraconicEvolution:infusedObsidian>, <ore:stickBlaze>, <ore:itemVibrantCrystal>, <ore:stickBlaze>, <DraconicEvolution:infusedObsidian>, null, null, null],
+[null, <minecraft:obsidian>, <ore:stickBlaze>, <ore:itemVibrantCrystal>, <ore:stickBlaze>, <minecraft:obsidian>, null, null, null],
 [null, null, null, null, null, null, null, null, null]]);
 
 // --- Item Dislocator
@@ -725,16 +725,10 @@ mods.avaritia.ExtremeCrafting.addShaped(<DraconicEvolution:draconium:1>, [
 [null, null, null, null, null, null, null, null, null]]);
 
 // --- Draconic Chest
-mods.avaritia.ExtremeCrafting.addShaped(<DraconicEvolution:draconiumChest>, [
-[null, null, null, null, null, null, null, null, null],
-[null, null, null, null, null, null, null, null, null],
-[null, null, <ore:screwDraconium>, <ore:plateDoubleDraconium>, <ore:plateDoubleDraconium>, <ore:plateDoubleDraconium>, <ore:screwDraconium>, null, null],
-[null, null, <ore:plateDoubleDraconium>, <gregtech:gt.metaitem.01:32744>, <EnderIO:blockCapBank:1>.withTag({type: "SIMPLE"}), <gregtech:gt.blockmachines:263>, <ore:plateDoubleDraconium>, null, null],
-[null, null, <ore:plateDoubleDraconium>, <ore:chestDiamond>, WyvernCore, <ore:chestDiamond>, <ore:plateDoubleDraconium>, null, null],
-[null, null, <ore:screwDraconium>, <ore:plateDoubleDraconium>, <ore:plateDoubleDraconium>, <ore:plateDoubleDraconium>, <ore:screwDraconium>, null, null],
-[null, null, null, null, null, null, null, null, null],
-[null, null, null, null, null, null, null, null, null],
-[null, null, null, null, null, null, null, null, null]]);
+recipes.addShaped(<DraconicEvolution:draconiumChest>, [
+[<ore:plateObsidian>, <EnderIO:blockCapBank:1>, <ore:plateObsidian>],
+[<IC2:blockMachine:1>, <avaritiaddons:CompressedChest>, <gregtech:gt.metaitem.01:32744>],
+[<ore:plateObsidian>, <ore:plateObsidian>, <ore:plateObsidian>]]);
 
 // --- Dislocator Pedestal
 mods.avaritia.ExtremeCrafting.addShaped(<DraconicEvolution:teleporterStand>, [
@@ -881,9 +875,9 @@ mods.avaritia.ExtremeCrafting.addShaped(<DraconicEvolution:sunDial>, [
 mods.avaritia.ExtremeCrafting.addShaped(<DraconicEvolution:grinder:3>, [
 [null, null, null, null, null, null, null, null, null],
 [null, null, null, null, null, null, null, null, null],
-[null, null, <ore:plateDraconium>, <ore:plateDraconium>, DraconicCore, <ore:plateDraconium>, <ore:plateDraconium>, null, null],
+[null, null, <ore:plateDraconium>, <ore:plateDraconium>, <ore:plateDraconium>, <ore:plateDraconium>, <ore:plateDraconium>, null, null],
 [null, null, <ore:plateDraconium>, <Thaumcraft:ItemSwordElemental>, <EnderIO:blockKillerJoe>, <Thaumcraft:ItemSwordElemental>, <ore:plateDraconium>, null, null],
-[null, null, <ore:plateDraconium>, <gregtech:gt.metaitem.01:32604>, <DraconicEvolution:generator:3>, <gregtech:gt.metaitem.01:32604>, <ore:plateDraconium>, null, null],
+[null, null, <ore:plateDraconium>, <gregtech:gt.metaitem.01:32604>, <EnderIO:blockCapBank:3>, <gregtech:gt.metaitem.01:32604>, <ore:plateDraconium>, null, null],
 [null, null, <ore:plateDraconium>, <ore:plateDraconium>, <ore:plateDraconium>, <ore:plateDraconium>, <ore:plateDraconium>, null, null],
 [null, null, null, null, null, null, null, null, null],
 [null, null, null, null, null, null, null, null, null],
