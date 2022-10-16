@@ -59,8 +59,8 @@ tools:
         intervalSeconds: 600
     autobackup:
         enabled: true
-        interval: 120
-        maxBackups: 50
+        interval: 180
+        maxBackups: 10
         maxDirSize: 100000
         worlds: null
         notifyPlayers: true
