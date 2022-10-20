@@ -19,6 +19,8 @@ groups:
             - command.forge.tps
             - command.basic.home
             - command.basic.sethome
+            - command.basic.spawn
+            - command.basic.back
         worlds: {}
     admin:
         inherits: ''
