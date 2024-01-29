@@ -16,9 +16,11 @@
    ```
 3. Add glitchless telegrambridge mod
 4. Add glitchlessauth mod
-5. Delete aroma1997 backup mod \
    Backup logic handled by ultramine server
-6. Delete notenoughIDs mod \
+5. Delete hydroenergy mod \
    ??? Reason ???
-7. Delete hydroenergy mod \
+---
+6. TODO: Patch Avaritia mod \
+   ??? Reason ???
+7. TODO: Patch EternalSingularity mod \
    ??? Reason ???
