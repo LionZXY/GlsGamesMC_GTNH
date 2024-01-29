@@ -7,3 +7,10 @@
    pollution {
      B:EnablePollution=false
    }
+2. Disable BuildCraft oil burn
+   ```cfg
+   // config/buildcraft/main.cfg
+   general {
+     B:oilCanBurn=false
+   }
+   ```
