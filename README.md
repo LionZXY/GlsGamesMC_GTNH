@@ -17,3 +17,5 @@
 3. Add telegrambridge gli mod
 4. Delete notenoughIDs mod
 5. Delete hydroenergy mod
+6. Delete hydroenergy mod
+7. Add glitchlessauth mod
