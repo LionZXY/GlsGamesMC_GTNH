@@ -1,6 +1,6 @@
 # GT New Horizons Server Mod Pack
 
-### Change list
+### Glitchless Change list
 1. Disable GregTech Pollution
    ```cfg
    // config/GregTechGregTech.cfg
@@ -14,8 +14,11 @@
      B:oilCanBurn=false
    }
    ```
-3. Add telegrambridge gli mod
-4. Delete notenoughIDs mod
-5. Delete hydroenergy mod
-6. Delete hydroenergy mod
-7. Add glitchlessauth mod
+3. Add glitchless telegrambridge mod
+4. Add glitchlessauth mod
+5. Delete aroma1997 backup mod \
+   Backup logic handled by ultramine server
+6. Delete notenoughIDs mod \
+   ??? Reason ???
+7. Delete hydroenergy mod \
+   ??? Reason ???
