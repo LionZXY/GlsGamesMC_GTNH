@@ -19,7 +19,7 @@ groups:
             - command.forge.tps
             - command.basic.home
             - command.basic.sethome
-            - command.basic.spawn
+            - command.fastwarp.spawn
             - command.basic.back
         worlds: {}
     admin:
