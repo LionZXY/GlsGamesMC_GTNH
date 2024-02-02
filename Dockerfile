@@ -1,3 +1,19 @@
+FROM alpine:3.19 as patcher
+
+WORKDIR /app/
+
+RUN apk add --no-cache wget unzip sed
+
+RUN wget https://f005.backblazeb2.com/file/Glitchless/GT_New_Horizons_2.5.1_Server_Java_8.zip -O gtnh.zip &&  \
+    unzip gtnh.zip -d gtnh && \
+    rm gtnh.zip
+
+COPY server/ gtnh/
+
+RUN sed -i -e 's/B:EnablePollution=true/B:EnablePollution=false/g' gtnh/config/GregTech/GregTech.cfg && \
+    sed -i -e 's/B:oilCanBurn=true/B:oilCanBurn=false/g' gtnh/config/buildcraft/main.cfg && \
+    sed -i -e 's/B:"Enable Ownership"=true/B:"Enable Ownership"=false/g' gtnh/config/CarpentersBlocks.cfg
+
 FROM lionzxy/multiarch_java
 
 WORKDIR /app/
@@ -5,8 +21,7 @@ WORKDIR /app/
 ENV RCON_PORT=25575 RCON_PASSWORD=DEFAULT
 COPY --from=itzg/rcon-cli:latest /rcon-cli /bin/
 
-COPY . /app/
+COPY --from=patcher /app/gtnh /app/
 RUN chmod +x /app/startserver.sh
-RUN echo "eula=true" > /app/eula.txt
 
 CMD /app/startserver.sh
