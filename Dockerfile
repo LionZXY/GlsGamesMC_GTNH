@@ -10,7 +10,6 @@ RUN wget https://f005.backblazeb2.com/file/Glitchless/GT_New_Horizons_2.5.1_Serv
 
 COPY server/ gtnh/
 RUN rm gtnh/mods/notenoughIDs-1.5.3.jar # Ultramine crash wit not enought ids
-RUN rm gtnh/mods/hydroenergy-1.1.1.jar # Crash on apple silicon
 
 RUN sed -i -e 's/B:EnablePollution=true/B:EnablePollution=false/g' gtnh/config/GregTech/GregTech.cfg && \
     sed -i -e 's/B:oilCanBurn=true/B:oilCanBurn=false/g' gtnh/config/buildcraft/main.cfg && \
