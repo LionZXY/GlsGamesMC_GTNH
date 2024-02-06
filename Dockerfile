@@ -14,7 +14,8 @@ RUN rm gtnh/mods/notenoughIDs-1.5.3.jar # Ultramine crash wit not enought ids
 RUN sed -i -e 's/B:EnablePollution=true/B:EnablePollution=false/g' gtnh/config/GregTech/GregTech.cfg && \
     sed -i -e 's/B:oilCanBurn=true/B:oilCanBurn=false/g' gtnh/config/buildcraft/main.cfg && \
     sed -i -e 's/B:"Enable Ownership"=true/B:"Enable Ownership"=false/g' gtnh/config/CarpentersBlocks.cfg && \
-    sed -i -e 's/B:ForestryStampsAndChunkLoaderCoinsServerEnabled=false/B:ForestryStampsAndChunkLoaderCoinsServerEnabled=true/g' gtnh/config/GTNewHorizons/dreamcraft.cfg
+    sed -i -e 's/B:ForestryStampsAndChunkLoaderCoinsServerEnabled=false/B:ForestryStampsAndChunkLoaderCoinsServerEnabled=true/g' gtnh/config/GTNewHorizons/dreamcraft.cfg && \
+    sed -i -e 's/B:MultiBlockMachines.disableMaintenance_false=false/B:MultiBlockMachines.disableMaintenance_false=true/g' gtnh/config/GregTech/MachineStats.cfg
 
 FROM lionzxy/multiarch_java
 
