@@ -4,12 +4,12 @@ WORKDIR /app/
 
 RUN apk add --no-cache wget unzip sed
 
-RUN wget https://f005.backblazeb2.com/file/Glitchless/GT_New_Horizons_2.5.1_Server_Java_8.zip -O gtnh.zip &&  \
+RUN wget https://f003.backblazeb2.com/file/lionzxy-static-files/GT_New_Horizons_2.8.4_Server_Java_8.zip -O gtnh.zip &&  \
     unzip gtnh.zip -d gtnh && \
     rm gtnh.zip
 
 COPY server/ gtnh/
-RUN rm gtnh/mods/notenoughIDs-1.5.3.jar # Ultramine crash wit not enought ids
+RUN rm gtnh/mods/notenoughIDs-1.5.3.jar # Ultramine crash with not enought ids
 
 RUN sed -i -e 's/B:EnablePollution=true/B:EnablePollution=false/g' gtnh/config/GregTech/GregTech.cfg && \
     sed -i -e 's/B:oilCanBurn=true/B:oilCanBurn=false/g' gtnh/config/buildcraft/main.cfg && \
