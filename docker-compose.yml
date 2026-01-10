@@ -1,17 +1,17 @@
 services:
   mc_gtnh:
-    image: glitchless/gli_mc_gtnh:18
-    restart: unless-stopped
+    build:
+      context: .
     ports:
       - "25567:25565"
     environment:
       MC_RAM: "32G"
       SECRET_WORLD_SEED: HIGHSECRET
     volumes:
-      - ./worlds:/app/worlds
-      - ./logs:/app/logs
-      - ./backups:/app/backups
-      - ./config/telegrambridge.json:/app/config/telegrambridge.json
-      - ./config/glitchlessauth.cfg:/app/config/glitchlessauth.cfg
-      - ./storage:/app/storage
-      - ./config/JourneyMapServer:/app/config/JourneyMapServer
+      - ./data/worlds:/app/worlds
+      - ./data/logs:/app/logs
+      - ./data/backups:/app/backups
+      - ./data/config/telegrambridge.json:/app/config/telegrambridge.json
+      - ./data/config/glitchlessauth.cfg:/app/config/glitchlessauth.cfg
+      - ./data/storage:/app/storage
+      - ./data/config/JourneyMapServer:/app/config/JourneyMapServer

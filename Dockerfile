@@ -4,12 +4,15 @@ WORKDIR /app/
 
 RUN apk add --no-cache wget unzip sed
 
-RUN wget https://f003.backblazeb2.com/file/lionzxy-static-files/GT_New_Horizons_2.8.4_Server_Java_8.zip -O gtnh.zip &&  \
+RUN wget https://f003.backblazeb2.com/file/lionzxy-static-files/GT_New_Horizons_2.8.4_Server_Java_17-25.zip -O gtnh.zip &&  \
     unzip gtnh.zip -d gtnh && \
     rm gtnh.zip
 
 COPY server/ gtnh/
-RUN rm gtnh/mods/notenoughIDs-1.5.3.jar # Ultramine crash with not enought ids
+ # Ultramine requirements https://github.com/SKProCH/ultramine_core?tab=readme-ov-file#launching-gtnh
+RUN rm gtnh/mods/archaicfix-0.7.7.jar && rm gtnh/mods/coretweaks-0.3.3.6-GTNH.jar
+RUN rm gtnh/mods/ServerUtilities-2.2.2.jar # Temprorary fix for https://github.com/GTNewHorizons/ServerUtilities/pull/259
+
 
 RUN sed -i -e 's/B:EnablePollution=true/B:EnablePollution=false/g' gtnh/config/GregTech/GregTech.cfg && \
     sed -i -e 's/B:oilCanBurn=true/B:oilCanBurn=false/g' gtnh/config/buildcraft/main.cfg && \
@@ -17,7 +20,7 @@ RUN sed -i -e 's/B:EnablePollution=true/B:EnablePollution=false/g' gtnh/config/G
     sed -i -e 's/B:ForestryStampsAndChunkLoaderCoinsServerEnabled=false/B:ForestryStampsAndChunkLoaderCoinsServerEnabled=true/g' gtnh/config/GTNewHorizons/dreamcraft.cfg && \
     sed -i -e 's/B:MultiBlockMachines.disableMaintenance_false=false/B:MultiBlockMachines.disableMaintenance_false=true/g' gtnh/config/GregTech/MachineStats.cfg
 
-FROM lionzxy/multiarch_java
+FROM amazoncorretto:21-alpine-full
 
 WORKDIR /app/
 
