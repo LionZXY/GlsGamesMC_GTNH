@@ -22,6 +22,7 @@ groups:
             - command.fastwarp.spawn
             - command.basic.back
             - command.serverutilities.trash_can
+            - command.serverutilities.team
         worlds: {}
     admin:
         inherits: ''
