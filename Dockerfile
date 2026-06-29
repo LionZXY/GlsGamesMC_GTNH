@@ -15,6 +15,7 @@ RUN rm gtnh/mods/ServerUtilities-2.2.2.jar # Temprorary fix for https://github.c
 
 
 RUN sed -i -e 's/B:EnablePollution=true/B:EnablePollution=false/g' gtnh/config/GregTech/GregTech.cfg && \
+    sed -i -e 's/B:"Activate Pollution"=true/B:"Activate Pollution"=false/g' gtnh/config/GregTech/Pollution.cfg && \
     sed -i -e 's/B:oilCanBurn=true/B:oilCanBurn=false/g' gtnh/config/buildcraft/main.cfg && \
     sed -i -e 's/B:"Enable Ownership"=true/B:"Enable Ownership"=false/g' gtnh/config/CarpentersBlocks.cfg && \
     sed -i -e 's/B:ForestryStampsAndChunkLoaderCoinsServerEnabled=false/B:ForestryStampsAndChunkLoaderCoinsServerEnabled=true/g' gtnh/config/GTNewHorizons/dreamcraft.cfg && \
